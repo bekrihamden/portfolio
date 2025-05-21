@@ -1,0 +1,139 @@
+.home-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: calc(100vh - 80px);
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-content {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.highlight {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #aaa;
+}
+
+.home-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #ddd;
+  max-width: 600px;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #4ecdc4;
+}
+
+.btn-secondary:hover {
+  background: rgba(78, 205, 196, 0.1);
+  transform: translateY(-3px);
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), rgba(78, 205, 196, 0.2));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(78, 205, 196, 0.5);
+}
+
+.image-placeholder span {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 960px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .home-content {
+    padding-right: 0;
+    margin-top: 2rem;
+  }
+
+  .home-title {
+    font-size: 2.5rem;
+  }
+
+  .home-description {
+    margin: 0 auto 2rem auto;
+  }
+
+  .home-buttons {
+    justify-content: center;
+  }
+
+  .image-placeholder {
+    width: 250px;
+    height: 250px;
+  }
+}

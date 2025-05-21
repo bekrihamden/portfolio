@@ -1,0 +1,33 @@
+.social-links-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.github {
+  background-color: rgba(78, 205, 196, 0.2);
+  color: #4ecdc4;
+}
+
+.github:hover {
+  background: linear-gradient(45deg, #4ecdc4, #4ecdc4);
+  color: #fff;
+}
